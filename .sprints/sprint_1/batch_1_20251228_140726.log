@@ -1,0 +1,27 @@
+[0;32m[14:07:26][0m =========================================
+[0;32m[14:07:26][0m BATCH 1 - SPRINT 1
+[0;32m[14:07:26][0m =========================================
+[0;32m[14:07:26][0m Iniciando Batch 1 - Sprint 1
+[0;32m[14:07:26][0m Criando interact.rs (300 LOC)...
+[0;32m[14:07:26][0m ✅ interact.rs criado (300 LOC, 5 tests)
+[0;32m[14:07:26][0m Criando numb.rs (150 LOC)...
+[0;32m[14:07:26][0m ✅ numb.rs criado (150 LOC, 6 tests)
+[0;32m[14:07:26][0m Criando book.rs (150 LOC)...
+[0;32m[14:07:26][0m ✅ book.rs criado (150 LOC, 4 tests)
+[0;32m[14:07:26][0m Criando ir.rs (100 LOC - stub expandido)...
+[0;32m[14:07:26][0m ✅ ir.rs criado (100 LOC, 3 tests)
+[0;32m[14:07:26][0m Atualizando lib.rs para incluir novos módulos...
+[0;32m[14:07:26][0m ✅ lib.rs atualizado
+[0;32m[14:07:26][0m 
+[0;32m[14:07:26][0m =========================================
+[0;32m[14:07:26][0m TESTING
+[0;32m[14:07:26][0m =========================================
+[0;32m[14:07:26][0m Executando testes do batch 1...
+error: failed to load manifest for workspace member `/home/mex/projetos/hvmx/crates/hvmx-memory`
+referenced by workspace at `/home/mex/projetos/hvmx/Cargo.toml`
+
+Caused by:
+  failed to read `/home/mex/projetos/hvmx/crates/hvmx-memory/Cargo.toml`
+
+Caused by:
+  No such file or directory (os error 2)

@@ -2,16 +2,15 @@
 // HVMX - High-order Virtual Machine eXtreme
 // ==============================================================================
 // File: lib.rs
-// Location: src/lib.rs
-// Purpose: JIT compiler for HVM
-// Author: scoobiii
-// Date: 2025-12-28
+// Location: crates/hvmx-jit/src/lib.rs
+// Purpose: JIT compiler root
+// Authors: scoobiii & GOS3 (Gang of Seven Senior Scrum LLM DevOps Team)
+// Date: 2024-12-28
 // License: MIT OR Apache-2.0
 // ==============================================================================
-
 
 pub mod ir;
 pub mod runtime;
 pub mod backend;
 
-// TODO: Implement JIT compilation
+pub use ir::HVMIR;

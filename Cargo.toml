@@ -1,0 +1,54 @@
+# ==============================================================================
+# HVMX Workspace
+# ==============================================================================
+# File: Cargo.toml
+# Location: hvmx/Cargo.toml
+# Purpose: Workspace root configuration
+# Author: scoobiii
+# Date: 2024-12-28
+# ==============================================================================
+
+[workspace]
+members = [
+    "crates/hvmx-core",
+    "crates/hvmx-jit",
+    "crates/hvmx-memory",
+    "crates/hvmx-scheduler",
+    "crates/hvmx-cli",
+]
+resolver = "2"
+
+[workspace.package]
+version = "1.0.0"
+edition = "2021"
+authors = ["scoobiii <scoobiii@gmail.com>"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/scoobiii/hvmx"
+homepage = "https://hvmx.dev"
+documentation = "https://docs.rs/hvmx"
+
+[workspace.dependencies]
+# Core
+thiserror = "1.0"
+anyhow = "1.0"
+
+# GPU backends
+vulkano = "0.34"
+metal = "0.27"
+
+# Utilities
+criterion = "0.5"
+rayon = "1.7"
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+strip = true
+
+[profile.bench]
+inherits = "release"
+
+[profile.dev]
+opt-level = 0
+debug = true

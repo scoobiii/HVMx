@@ -1,0 +1,16 @@
+[package]
+name = "hvmx-cli"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "hvmx"
+path = "src/main.rs"
+
+[dependencies]
+hvmx-core = { path = "../hvmx-core" }
+hvmx-jit = { path = "../hvmx-jit" }
+clap = { version = "4.0", features = ["derive"] }
+anyhow.workspace = true

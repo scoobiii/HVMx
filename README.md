@@ -60,7 +60,7 @@ MIT OR Apache-2.0
 
 ## 👤 Author
 
-scoobiii & GOS3{ganf of serven senior scrum llm devop team}
+* scoobiii & GOS3{ganf of serven senior scrum llm devop team}  
 ---
 
 **Status**: 🟡 Sprint 1 in progress

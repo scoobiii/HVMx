@@ -1,3 +1,10 @@
+# ==============================================================================
+# hvmx-jit - JIT Compiler
+# ==============================================================================
+# Authors: scoobiii & GOS3
+# Date: 2024-12-28
+# ==============================================================================
+
 [package]
 name = "hvmx-jit"
 version.workspace = true
@@ -9,3 +16,13 @@ license.workspace = true
 hvmx-core = { path = "../hvmx-core" }
 thiserror.workspace = true
 anyhow.workspace = true
+
+# GPU backends
+vulkano = { version = "0.34", optional = true }
+
+[features]
+default = ["vulkan"]
+vulkan = ["dep:vulkano"]
+
+[dev-dependencies]
+criterion.workspace = true

@@ -1,30 +1,20 @@
 // ==============================================================================
 // HVMX - High-order Virtual Machine eXtreme
 // ==============================================================================
-// File: lib.rs
-// Location: crates/hvmx-jit/src/lib.rs
-// Purpose: JIT compiler root module
+// File: cpu.rs
+// Location: crates/hvmx-jit/src/backend/cpu.rs
+// Purpose: CPU fallback backend
 // Authors: scoobiii & GOS3 (Gang of Seven Senior Scrum LLM DevOps Team)
 // Date: 2024-12-28
 // License: MIT OR Apache-2.0
 // ==============================================================================
 
-pub mod ir;
-pub mod runtime;
-pub mod backend;
-pub mod codegen;
-
-// Re-exports
-pub use runtime::{HVMRuntime, GPUBackend, GPUInfo, GPUVendor};
-pub use ir::HVMIR;
+// TODO: Implement CPU fallback for when no GPU available
 
 #[cfg(test)]
 mod tests {
-    use super::*;
-
     #[test]
-    fn test_exports() {
-        // Verify all exports are accessible
-        let _ir = HVMIR::new();
+    fn test_cpu_stub() {
+        // TODO: Implement
     }
 }

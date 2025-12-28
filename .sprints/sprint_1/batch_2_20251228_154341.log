@@ -1,0 +1,42 @@
+[0;35m[✨][0m =========================================
+[0;35m[✨][0m BATCH 2 - SPRINT 1: VULKAN BACKEND
+[0;35m[✨][0m =========================================
+[0;32m[15:43:41][0m 
+[0;32m[15:43:41][0m 🚀 Iniciando Batch 2 - Vulkan Backend
+[0;32m[15:43:41][0m 📦 Atualizando dependências...
+[0;32m[15:43:41][0m ✅ Cargo.toml atualizado
+[0;32m[15:43:41][0m ✨ Criando runtime.rs (300 LOC)...
+[0;32m[15:43:41][0m ✅ runtime.rs criado (300 LOC, 5 tests)
+[0;32m[15:43:41][0m ✨ Criando backend/mod.rs (100 LOC)...
+[0;32m[15:43:41][0m ✅ backend/mod.rs criado (100 LOC, 2 tests)
+[0;32m[15:43:41][0m ✨ Criando backend/vulkan.rs (400 LOC)...
+[0;32m[15:43:41][0m ✅ backend/vulkan.rs criado (400 LOC, 5 tests)
+[0;32m[15:43:41][0m ✨ Criando backend/cpu.rs (stub)...
+[0;32m[15:43:41][0m ✅ backend/cpu.rs criado (stub)
+[0;32m[15:43:41][0m ✨ Criando codegen/mod.rs (stub)...
+[0;32m[15:43:41][0m ✅ codegen stubs criados
+[0;32m[15:43:41][0m 📝 Atualizando lib.rs...
+[0;32m[15:43:41][0m ✅ lib.rs atualizado
+[0;32m[15:43:41][0m 
+[0;32m[15:43:41][0m =========================================
+[0;32m[15:43:41][0m BUILD & TEST
+[0;32m[15:43:41][0m =========================================
+[0;32m[15:43:41][0m 🔨 Compilando workspace...
+error: failed to load manifest for workspace member `/home/mex/projetos/hvmx/crates/hvmx-memory`
+referenced by workspace at `/home/mex/projetos/hvmx/Cargo.toml`
+
+Caused by:
+  failed to read `/home/mex/projetos/hvmx/crates/hvmx-memory/Cargo.toml`
+
+Caused by:
+  No such file or directory (os error 2)
+[0;32m[15:43:41][0m ✅ Build bem-sucedido
+[0;32m[15:43:41][0m 🧪 Executando testes do batch 2...
+error: failed to load manifest for workspace member `/home/mex/projetos/hvmx/crates/hvmx-memory`
+referenced by workspace at `/home/mex/projetos/hvmx/Cargo.toml`
+
+Caused by:
+  failed to read `/home/mex/projetos/hvmx/crates/hvmx-memory/Cargo.toml`
+
+Caused by:
+  No such file or directory (os error 2)

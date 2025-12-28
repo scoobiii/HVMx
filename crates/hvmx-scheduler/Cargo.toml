@@ -1,0 +1,22 @@
+# ==============================================================================
+# hvmx-scheduler - Heterogeneous Task Scheduler
+# ==============================================================================
+# Authors: scoobiii & GOS3
+# Date: 2024-12-28
+# ==============================================================================
+
+[package]
+name = "hvmx-scheduler"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+hvmx-core = { path = "../hvmx-core" }
+hvmx-jit = { path = "../hvmx-jit" }
+thiserror.workspace = true
+anyhow.workspace = true
+
+[dev-dependencies]
+criterion.workspace = true

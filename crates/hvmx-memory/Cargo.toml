@@ -1,0 +1,21 @@
+# ==============================================================================
+# hvmx-memory - Unified Memory Management
+# ==============================================================================
+# Authors: scoobiii & GOS3
+# Date: 2024-12-28
+# ==============================================================================
+
+[package]
+name = "hvmx-memory"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+hvmx-core = { path = "../hvmx-core" }
+thiserror.workspace = true
+anyhow.workspace = true
+
+[dev-dependencies]
+criterion.workspace = true
